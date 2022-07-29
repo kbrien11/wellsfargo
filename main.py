@@ -8,7 +8,7 @@ CORS(app)
 
 @app.route('/', methods=['GET'])
 def test():
-    # all you have to do is add new files to these folders and it will automativally grab them and add them to the consolidated output
+    # all you have to do is set up local paths for the files add new files to these folders and it will automativally grab them and add them to the consolidated output
     files = []
     for filename in os.listdir("/Users/keith_brien/Documents/Projects/wellsfargo/inout/data_source_2"):
         files.append("/Users/keith_brien/Documents/Projects/wellsfargo/inout/data_source_2/"+ filename)
